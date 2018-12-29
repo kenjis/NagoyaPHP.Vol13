@@ -5,7 +5,7 @@ class Nagoyaphp13
 {
     public function run(string $input) : string
     {
-        $commnad = new Command($input);
+        $command = new Command($input);
         $numbers = [
             [1, 2, 3],
             [4, 5, 6],
@@ -14,10 +14,10 @@ class Nagoyaphp13
         $magicSquare = new MagicSquare($numbers);
         $rotator = new Rotator();
 
-        $commandArray = $commnad->convertToArray();
+        $commandArray = $command->convertToArray();
 
         foreach ($commandArray as $commnadString) {
-            list($direction, $position, $reverse) = $commnad->interpret($commnadString);
+            list($direction, $position, $reverse) = $command->interpret($commnadString);
 
             $method = 'get' . $direction;
             $items = $magicSquare->$method($position);
