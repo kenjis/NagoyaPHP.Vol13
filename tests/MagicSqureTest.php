@@ -6,18 +6,18 @@ use PHPUnit\Framework\TestCase;
 class MagicSqureTest extends TestCase
 {
     /**
-     * @var MagicSqure
+     * @var MagicSquare
      */
     protected $magicSqure;
 
     protected function setUp()
     {
-        $this->magicSqure = new MagicSqure();
+        $this->magicSqure = new MagicSquare();
     }
 
     public function test_インスタンス化できる()
     {
-        $this->assertInstanceOf(MagicSqure::class, $this->magicSqure);
+        $this->assertInstanceOf(MagicSquare::class, $this->magicSqure);
     }
 
     public function test_0行目の数字を取得できる()

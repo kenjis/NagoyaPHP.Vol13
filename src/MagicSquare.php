@@ -1,7 +1,7 @@
 <?php
 namespace Ttskch\Nagoyaphp13;
 
-class MagicSqure
+class MagicSquare
 {
     private $numbers = [
         [1, 2, 3],

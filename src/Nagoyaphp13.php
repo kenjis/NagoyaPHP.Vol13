@@ -6,7 +6,7 @@ class Nagoyaphp13
     public function run(string $input) : string
     {
         $commnad = new Command($input);
-        $magicSqure = new MagicSqure();
+        $magicSqure = new MagicSquare();
         $rotator = new Rotator();
 
         $commandArray = $commnad->convertToArray();
