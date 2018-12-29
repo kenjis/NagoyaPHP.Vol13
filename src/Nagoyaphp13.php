@@ -6,7 +6,12 @@ class Nagoyaphp13
     public function run(string $input) : string
     {
         $commnad = new Command($input);
-        $magicSquare = new MagicSquare();
+        $numbers = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+        ];
+        $magicSquare = new MagicSquare($numbers);
         $rotator = new Rotator();
 
         $commandArray = $commnad->convertToArray();

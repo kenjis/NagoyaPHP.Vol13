@@ -3,11 +3,15 @@ namespace Ttskch\Nagoyaphp13;
 
 class MagicSquare
 {
-    private $numbers = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9],
-    ];
+    /**
+     * @var array
+     */
+    private $numbers;
+
+    public function __construct(array $numbers)
+    {
+        $this->numbers = $numbers;
+    }
 
     public function __toString() : string
     {

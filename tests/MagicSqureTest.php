@@ -12,7 +12,12 @@ class MagicSqureTest extends TestCase
 
     protected function setUp()
     {
-        $this->magicSqure = new MagicSquare();
+        $numbers = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+        ];
+        $this->magicSqure = new MagicSquare($numbers);
     }
 
     public function test_インスタンス化できる()
