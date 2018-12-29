@@ -1,5 +1,9 @@
 # nagoyaphp13 <small>(boilerplate)</small>
 
+## 問題
+
+- http://nabetani.sakura.ne.jp/hena/ordf09rotbox/
+
 ## 使い方
 
 ### 1. インストール
@@ -21,3 +25,9 @@ $ composer test
 ```
 
 [Ttskch\Nagoyaphp13\Nagoyaphp13Test::test()](/tests/Nagoyaphp13Test.php#L22) のテストが全てパスすればOK。
+
+## 関連
+
+- https://github.com/77web/Nagoyaphp13
+- https://github.com/hidenorigoto/Dk20181226
+- https://github.com/s-hiroshi/nagoyaphp13
