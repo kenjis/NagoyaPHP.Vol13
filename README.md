@@ -30,6 +30,6 @@ $ composer test
 
 - https://github.com/ttskch/nagoyaphp13/tree/impl
 - https://github.com/77web/Nagoyaphp13
-- https://github.com/hidenorigoto/Dk20181226
+- https://github.com/hidenorigoto/Dk20181226/tree/master/HgDk20170131
 - https://github.com/s-hiroshi/nagoyaphp13
 - https://github.com/longkey1/nagoyaphp-doukaku/tree/master/20181226
