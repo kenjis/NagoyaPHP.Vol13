@@ -1,5 +1,4 @@
 <?php
-
 namespace Ttskch\Nagoyaphp13;
 
 use PHPUnit\Framework\TestCase;
@@ -21,7 +20,7 @@ class Nagoyaphp13Test extends TestCase
      */
     public function test($input, $expected)
     {
-        $this->assertEquals($expected, $this->nagoyaphp13->run($input));
+        $this->assertSame($expected, $this->nagoyaphp13->run($input));
     }
 
     public function dataProvider()
