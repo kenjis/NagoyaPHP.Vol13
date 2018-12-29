@@ -6,7 +6,7 @@ class Nagoyaphp13
     public function run(string $input) : string
     {
         $commnad = new Command($input);
-        $magicSquire = new MagicSqure();
+        $magicSqure = new MagicSqure();
         $rotator = new Rotator();
 
         $commandArray = $commnad->convertToArray();
@@ -15,14 +15,14 @@ class Nagoyaphp13
             list($direction, $position, $reverse) = $commnad->interpret($commnadString);
 
             $method = 'get' . $direction;
-            $items = $magicSquire->$method($position);
+            $items = $magicSqure->$method($position);
 
             $newItems = $rotator->rotate($items, $reverse);
 
             $method = 'set' . $direction;
-            $magicSquire->$method($position, $newItems);
+            $magicSqure->$method($position, $newItems);
         }
 
-        return $magicSquire;
+        return $magicSqure;
     }
 }
