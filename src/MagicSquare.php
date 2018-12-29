@@ -15,14 +15,12 @@ class MagicSquare
 
     public function __toString() : string
     {
-        $string = '';
+        $rows =[];
         foreach ($this->numbers as $row) {
-            $string .= implode('', $row) . '/';
+            $rows[] = implode('', $row);
         }
 
-        $string = rtrim($string, '/');
-
-        return $string;
+        return implode('/', $rows);
     }
 
     public function getRow(int $nth) : array
