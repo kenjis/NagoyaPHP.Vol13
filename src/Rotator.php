@@ -3,9 +3,9 @@ namespace Ttskch\Nagoyaphp13;
 
 class Rotator
 {
-    public function rotate(array $array, bool $revese = false) : array
+    public function rotate(array $array, bool $reverse = false) : array
     {
-        if ($revese) {
+        if ($reverse) {
             array_unshift($array, array_pop($array));
 
             return $array;
