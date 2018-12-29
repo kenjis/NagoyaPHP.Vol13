@@ -1,4 +1,4 @@
-# nagoyaphp13 <small>(boilerplate)</small>
+# nagoyaphp13
 
 ## 問題
 
